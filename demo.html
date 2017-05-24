@@ -8,11 +8,14 @@
 	html, body{
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		height: 100%;
 		overflow: hidden;
 	}
 	img{
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 	}
 </style>
 <body>
@@ -21,7 +24,7 @@
 		//window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "https://www.baidu.com/" :  "http://news.baidu.com/";
 		 var type = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
 		 if (type) {
-		 	document.getElementById("backgroundImg").src="Phone.jpg"
+		 	document.getElementById("backgroundImg").src="PhoneNew.jpg"
 		 } else {
 		 	document.getElementById("backgroundImg").src="PC.jpg";
 		 }
