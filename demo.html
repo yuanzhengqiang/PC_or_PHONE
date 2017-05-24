@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+</head>
+<style type="text/css">
+	html, body{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	img{
+		width: 100vw;
+		height: 100vh;
+	}
+</style>
+<body>
+	<img src="" alt="身边" id="backgroundImg">
+	<script type="text/javascript">
+		//window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "https://www.baidu.com/" :  "http://news.baidu.com/";
+		 var type = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+		 if (type) {
+		 	document.getElementById("backgroundImg").src="Phone.jpg"
+		 } else {
+		 	document.getElementById("backgroundImg").src="PC.jpg";
+		 }
+		
+	</script>
+</body>
+</html>
